@@ -1,0 +1,37 @@
+
+.navigation-mobile,
+%navigation-mobile
+{
+  display: none;
+  margin-top: $half-gutter;
+
+  @include bp-nq($medium) {
+    display: block;
+  }
+
+  &.is-expanded {
+    display: block;
+  }
+}
+
+.navigation-mobile__button,
+%navigation-mobile__button {
+  margin: {
+    left: $half-gutter;
+    bottom: $half-gutter;
+  }
+
+  font-size: 1.5em;
+
+  @include bp-nq($medium) {
+    display: none;
+  }
+
+  @include print-none();
+}
+
+// Fugly selectors.
+
+.sf-menu {
+  @extend %navigation-mobile;
+}

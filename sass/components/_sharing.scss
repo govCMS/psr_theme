@@ -1,0 +1,38 @@
+.sharing,
+%sharing {
+  @include bp-nq($large) {
+    position: absolute;
+    top: -68px;
+    right: $gutter;
+    margin: 0;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    @include adjust-font-size-to($base-font-size);
+    display: inline-block;
+    font-family: $font-body;
+    color: color(grey-dark);
+  }
+
+  &__links {
+    display: inline-block;
+  }
+}
+
+// Fugly selectors.
+.main-content .block-service-links {
+  @extend %sharing;
+
+  .block__title {
+    @extend %sharing__title;
+  }
+
+  .block__content,
+  .service-links {
+    @extend %sharing__links;
+  }
+}

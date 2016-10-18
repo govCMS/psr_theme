@@ -1,0 +1,42 @@
+// Responsive table
+//
+// Markup: table-responsive.html
+//
+// Styleguide: components.table-responsive
+
+.table--independent-row,
+%table--independent-row {
+  @include bp-nq($not-large) {
+    border: none;
+
+    thead,
+    %__head {
+      @include element-invisible();
+    }
+
+    tr,
+    &__row {
+      display: table-row-group;
+      border: 1px solid color(border);
+    }
+
+    td,
+    &__cell {
+      display: table-row;
+      border: none;
+      padding: 0;
+
+      &:before {
+        @extend %table--independent-row__cell-wrapper;
+        content: attr(data-th);
+        background-color: color(grey-off-white);
+        font-family: $font-body-bold;
+      }
+    }
+
+    &__cell-wrapper {
+      display: table-cell;
+      padding: 10px 15px;
+    }
+  }
+}
