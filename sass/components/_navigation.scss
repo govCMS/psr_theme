@@ -10,7 +10,7 @@
 
 .navigation__wrapper,
 %navigation__wrapper {
-  background-color: color(black);
+  background-color: #42414d;
   display: inline-block;
   width: 100%;
   padding: $half-gutter 0 0;
@@ -27,8 +27,8 @@
   @extend %unstyled-list;
   @extend %clearfix;
   position: relative;
-  background-color: color(black);
-  text-transform: uppercase;
+  background-color: #42414d;
+  font-family: verdana, arial, sans-serif;
 }
 
 .navigation__item,
@@ -36,7 +36,7 @@
   @extend %unstyled-list;
   display: block;
   position: relative;
-  border: 1px solid color(grey-extra-light);
+  border: 1px solid color(red);
   border-top: none;
   white-space: nowrap;
 
@@ -173,6 +173,7 @@
       @extend %navigation__item;
 
       li a {
+        
         @extend %navigation__link;
 
         &.active {
