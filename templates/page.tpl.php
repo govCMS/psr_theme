@@ -10,7 +10,7 @@
 
 <div class="layout-centered page-wrapper">
   <header class="header" role="banner">
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo"><img src="<?php print $logo; ?>" alt="<?php print t('ASADA - Australian Sports Anti‑Doping Authority website'); ?>" class="header__logo-image" /></a>
+    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo"><img src="<?php print $logo; ?>" alt="<?php print t('PSR - Professional Services Review'); ?>" class="header__logo-image" /></a>
 
     <div class="header__name-and-slogan element-invisible">
       <h1 class="header__site-name">
