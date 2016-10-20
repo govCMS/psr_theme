@@ -48,6 +48,7 @@
 
 .mission__statement,
 %mission__statement {
+  font-size: 18px !important;  
   @extend %h2;
   @include adjust-leading-to(34px/$base-line-height);
   margin: 0 0 0 125px;
