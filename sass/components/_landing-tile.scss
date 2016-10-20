@@ -1,5 +1,5 @@
 .bean-image-and-text.landing_page {
-  max-width: 300px;
+  max-width: 470px;
 
   .image-title {
     position: relative;
@@ -9,6 +9,9 @@
   .image {
     line-height: 0;
     overflow: hidden;
+    width:100%;
+    height:auto;
+        
   }
 
   h2 {
