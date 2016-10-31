@@ -21,6 +21,7 @@
 
   @include print-none();
 }
+
 .navigation,
 %navigation {
   @extend %unstyled-list;
@@ -28,33 +29,59 @@
   position: relative;
   background-color: #42414d;
   font-family: verdana, arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 .psr-main-menu li:nth-child(2):hover{
-   &:hover > a{
-   background-color: #004e72 !important; 
-   color: #fff !important;
+   a {
+    background-color:  #004e72 !important; 
+    color: #fff !important;
 }
 }
 .psr-main-menu li:nth-child(3):hover{
-    &:hover > a{
-    background-color: #006a96 !important;
+    a {
+    background-color: #006a96 !important; 
     color: #fff !important;
-    
 }
 }
 
 .psr-main-menu li:nth-child(4):hover{
-    &:hover > a{
+    a {
     background-color: #4f7c92 !important; 
     color: #fff !important;
 }
 }
 .psr-main-menu li:nth-child(5):hover{
-    &:hover > a{
-    background-color: #737581 !important;
+    a {
+    background-color: #737581 !important; 
     color: #fff !important;
 }
 }
+.psr-main-menu li.active-trail:nth-child(2){
+   a{
+   background-color: #004e72 !important; 
+   color: #fff !important;
+}
+}
+.psr-main-menu li.active-trail:nth-child(3){
+    a{
+    background-color: #006a96 !important;
+    color: #fff !important;
+}
+}
+
+.psr-main-menu li.active-trail:nth-child(4){
+   a{
+    background-color: #4f7c92 !important; 
+    color: #fff !important;
+}
+}
+.psr-main-menu li.active-trail:nth-child(5){
+    a{
+    border-top: 3px solid #737581 !important; 
+}
+}
+
 .navigation__item,
 %navigation__item {
   @extend %unstyled-list;
