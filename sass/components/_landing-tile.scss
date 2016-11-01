@@ -9,7 +9,7 @@
   .image {
     line-height: 0;
     overflow: hidden;
-    width:463px;
+    width:100%;
     height:300px;
     background-color: gray;
         
@@ -28,11 +28,12 @@
     font-weight: normal;
     font-size: 1.1em;
     line-height: 42px;
+    
 
     @include bp-nq($medium) {
       font-size: 1.5em;
     }
-
+ 
     &:after {
       display: block;
       position: absolute;
@@ -44,8 +45,10 @@
       background-position: center center;
       height: 100%;
       width: 42px;
-      background-color: color(orange);
+      //background-color: color(red);
+
     }
+    
 
     a {
       display: inline-block;
@@ -56,24 +59,56 @@
     }
   }
 }
+.panel-col-first // Landing page
+{
+  .panel-pane:nth-child(1){
+    h2:after{
+      background-color: #004e72;
+    }
+  }
+  .panel-pane:nth-child(2){
+    h2:after{
+      background-color: #737581;
+    }
+  }
+  
+ 
+}
+.panel-col-last // Landing page
+{
+  .panel-pane:nth-child(1){
+    h2:after{
+      background-color:  #006a96; 
+    }
+  }
+  .panel-pane:nth-child(2){
+    h2:after{
+      background-color: #4f7c92;
+    }
+  }
+  
+ 
+}
+
+
 
 .panel-col-bottom .panels-ipe-portlet-wrapper, // For logged in user
 .panel-col-bottom .panel-pane, // Frontpage
 .panel-col-middle .panel-pane // Landing page
 {
   &:nth-of-type(n) .bean-image-and-text.landing_page h2:after {
-    background-color: color(orange);
+    background-color: color(orange) !important;
   }
 
   &:nth-of-type(2n) .bean-image-and-text.landing_page h2:after {
-    background-color: color(green);
+    background-color: color(green) !important;
   }
 
   &:nth-of-type(3n) .bean-image-and-text.landing_page h2:after {
-    background-color: color(blue);
+    background-color: color(blue) !important;
   }
 
   &:nth-of-type(4n) .bean-image-and-text.landing_page h2:after {
-    background-color: color(red);
+    background-color: color(red) !important;
   }
 }
