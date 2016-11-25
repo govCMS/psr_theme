@@ -31,63 +31,90 @@
   font-family: verdana, arial, sans-serif;
 }
 .psr-main-menu>li:nth-child(2):hover{
-   a {
-    background-color:  #004e72 !important; 
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
+  a {
+    background-color:  #004e72 !important;
     color: #fff !important;
+
+
 }
 }
 .psr-main-menu>li:nth-child(3):hover{
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
     a {
     background-color: #006a96 !important; 
     color: #fff !important;
 }
 }
 .psr-main-menu>li:nth-child(4):hover{
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
     a {
     background-color: #4f7c92 !important; 
     color: #fff !important;
 }
 }
 .psr-main-menu>li:nth-child(5):hover{
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
     a {
     background-color: #737581 !important; 
     color: #fff !important;
 }
 }
 //NON ACTIVE TRAIL
+
 .psr-main-menu>li:nth-child(2){
-   ul li a {
-    background-color:  #004e72 !important; 
-    color: #fff !important;
-}
+  ul li a {
+    background-color:  white !important;
+    color: black !important;
+  }
 }
 .psr-main-menu>li:nth-child(3){
    ul li a {
-    background-color:  #006a96 !important; 
-    color: #fff !important;
+    background-color:  white !important;
+    color: black !important;
 }
 }
 .psr-main-menu>li:nth-child(4){
    ul li a {
-    background-color:  #4f7c92 !important; 
-    color: #fff !important;
+     background-color:  white !important;
+     color: black !important;
 }
 }
 .psr-main-menu>li:nth-child(5){
    ul li a {
-    background-color:  #737581 !important; 
-    color: #fff !important;
+     background-color:  white !important;
+     color: black !important;
 }
 }
 
 //ACTIVE TRAIL
 .psr-main-menu li.active-trail:nth-child(2){
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
    a{
    background-color: #004e72 !important; 
    color: #fff !important;
 }
 }
 .psr-main-menu li.active-trail:nth-child(3){
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
     a{
     background-color: #006a96 !important;
     color: #fff !important;
@@ -95,15 +122,20 @@
 }
 
 .psr-main-menu li.active-trail:nth-child(4){
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
    a{
     background-color: #4f7c92 !important; 
     color: #fff !important;
 }
 }
 .psr-main-menu li.active-trail:nth-child(5){
-    a{
-    border-top: 3px solid #737581 !important; 
-}
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
 }
 .navigation__item,
 %navigation__item {

@@ -6,6 +6,10 @@
     margin: 0;
     @include output-rhythm(padding, rhythm(0.5) $half-gutter);
 
+    h4{
+      white-space: nowrap;
+    }
+
     ul,
     li {
       @include list-unstyled();
