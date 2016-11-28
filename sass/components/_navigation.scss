@@ -133,15 +133,18 @@
 }
 
 //ACTIVE TRAIL
+.psr-main-menu li.active-trail:nth-child(1) > a:before {
+  border-top: 3px solid white !important;
+}
 .psr-main-menu li.active-trail:nth-child(2){
   ul li a{
     background-color:  white !important;
     color: black !important;
   }
-   a{
+  a{
    background-color: #004e72 !important; 
    color: #fff !important;
-}
+  }
 }
 .psr-main-menu li.active-trail:nth-child(3){
   ul li a{
