@@ -108,6 +108,7 @@
   @include bp-nq($medium) {
     position:absolute;
     right:0;
+    left:auto;
     width:45% !important;
   }
 }
