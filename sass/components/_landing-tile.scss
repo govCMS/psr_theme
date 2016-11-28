@@ -63,10 +63,13 @@
     }
   }
 }
+.panel-2col-bricks {
+  position:relative;
+}
 .panel-col-first // Landing page
 {
   width:45% !important;
-  float: right !important;
+  //float: right !important;
   .panel-pane:nth-child(1){
     h2:after{
       background-color: #004e72;
@@ -82,6 +85,9 @@
 }
 .panel-col-last // Landing page
 {
+  position:absolute;
+  right:0;
+
   width:45% !important;
   float:left !important;
   .panel-pane:nth-child(1){
