@@ -79,8 +79,11 @@
     h2:after{
       background-color: #737581;
     }
+  } 
+
+  @include bp-nq($small) {
+    float:none !important;
   }
-  
  
 }
 .panel-col-last // Landing page
@@ -101,7 +104,10 @@
     }
   }
   
- 
+  @include bp-nq($small) {
+    position:relative;
+    left:-0.5em;
+  }
 }
 
 
