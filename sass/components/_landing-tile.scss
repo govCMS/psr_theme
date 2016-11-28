@@ -68,8 +68,9 @@
 }
 .panel-col-first // Landing page
 {
-  width:45% !important;
-  //float: right !important;
+  //width:45% !important;
+  width:100% !important;
+  //float: none !important;
   .panel-pane:nth-child(1){
     h2:after{
       background-color: #004e72;
@@ -81,18 +82,18 @@
     }
   } 
 
-  @include bp-nq($small) {
-    float:none !important;
+  @include bp-nq($medium) {
+    width:45% !important;
+    float:left !important;
   }
  
 }
 .panel-col-last // Landing page
 {
-  position:absolute;
-  right:0;
-
-  width:45% !important;
+  position:relative;
+  width:100% !important;
   float:left !important;
+  left:-0.5em;
   .panel-pane:nth-child(1){
     h2:after{
       background-color:  #006a96; 
@@ -104,9 +105,10 @@
     }
   }
   
-  @include bp-nq($small) {
-    position:relative;
-    left:-0.5em;
+  @include bp-nq($medium) {
+    position:absolute;
+    right:0;
+    width:45% !important;
   }
 }
 
