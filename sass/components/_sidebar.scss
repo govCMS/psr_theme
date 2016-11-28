@@ -61,7 +61,8 @@
     }
 
     &.active {
-      border-left: 5px solid color(red-border);
+      //border-left: 5px solid color(red-border);
+      font-weight:bold;
       padding-left: 15px;
     }
   }
