@@ -145,7 +145,7 @@
    background-color: #004e72 !important; 
    color: #fff !important;
   }
-  >ul>li:hover a:before {
+  >ul>li.active-trail a:before {
     border-left: 5px solid #004e72 !important;
   }
   >a:before {
@@ -161,7 +161,7 @@
     background-color: #006a96 !important;
     color: #fff !important;
 }
-  >ul>li:hover a:before {
+  >ul>li.active-trail a:before {
     border-left: 5px solid #006a96 !important;
   }
   >a:before {
@@ -178,7 +178,7 @@
     background-color: #4f7c92 !important; 
     color: #fff !important;
   }
-  >ul>li:hover a:before {
+  >ul>li.active-trail a:before {
     border-left: 5px solid #4f7c92 !important;
   }
   >a:before {
@@ -190,7 +190,7 @@
     background-color:  white !important;
     color: black !important;
   }
-  >ul>li:hover a:before {
+  >ul>li.active-trail a:before {
     border-left: 5px solid #737581 !important;
   }
   >a:before {
