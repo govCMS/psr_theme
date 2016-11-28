@@ -1,7 +1,7 @@
 // Dependencies
 @import 'clearfix';
 @import 'unstyled-list';
-
+ 
 // Navigation
 //
 // Markup: navigation.html
@@ -35,10 +35,13 @@
     background-color:  white !important;
     color: black !important;
   }
-  a {
+  >a {
     background-color:  #004e72 !important;
     color: #fff !important;
 
+    &:before {
+        border-top: 3px solid #004e72 !important;
+    }
 
 }
 }
