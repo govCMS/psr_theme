@@ -19,11 +19,6 @@
   padding: 10px 0;
   border-bottom: 2px solid color(border);
   border-top: 2px solid color(border);
-  max-height:95px;
-
-  @include bp-nq($medium) {
-    max-height:none;
-  }
 }
 
 .mission__title,
