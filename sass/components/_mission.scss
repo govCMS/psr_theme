@@ -1,7 +1,7 @@
 // Dependencies
 @import 'clearfix';
 //@import '%h2';
-
+ 
 // Mission
 //
 // Mission statement styling.
@@ -19,6 +19,11 @@
   padding: 10px 0;
   border-bottom: 2px solid color(border);
   border-top: 2px solid color(border);
+  max-height:95px;
+
+  @include bp-nq($medium) {
+    max-height:none;
+  }
 }
 
 .mission__title,
@@ -48,12 +53,18 @@
 
 .mission__statement,
 %mission__statement {
-  font-size: 18px !important;  
+  font-size: 11px !important;
+  line-height: 15px !important;
   @extend %h2;
   @include adjust-leading-to(34px/$base-line-height);
   margin: 0 0 0 125px;
 
   p {
     margin: 0;
+  }
+
+  @include bp-nq($medium) {
+    font-size: 18px !important;
+    line-height: 34px !important;
   }
 }
