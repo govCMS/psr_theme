@@ -53,6 +53,7 @@
         <div class="image">
         <?php if (!empty($content['field_link_to'])) : ?>
           <a href="<?php print render($content['field_link_to'][0]); ?>"><?php print render($content['field_bean_image']); ?></a>
+          <div style="display:none;" class="landing-hover-image"><?php print render($content['field_bean_imagehover']); ?></div>
         <?php else : ?>
           <?php print render($content['field_bean_image']); ?>
         <?php endif; ?>
