@@ -79,5 +79,27 @@ Drupal.behaviors.mobileNavigation = {
   }
 };
 
+Drupal.behaviors.landingImageHover = {
+    attach: function(context, settings) {
+
+	$( '.image-title image' ).foreach(function(i) {
+            var $that = $( this );
+            var $image_original[$that.data('name')] = $that.find( 'a img' ).attr( 'src' );
+            var $image_hover[$that.data('name')] = $( this ).find( '.landing-hover-image img' ).attr( 'src' );
+        });
+
+        console.log($image_original);
+        console.log($image_hover);
+
+        $( '.image-title image' ).hover(
+            function() {
+                $( this ).find( 'a img' ).attr('src', $image_hover[$(this).data('name')]);
+        },  function() {
+                $( this ).find( 'a img' ).attr('src', $image_original[$(this).data('name')]);
+            }
+        );
+
+    }
+};
 
 })(jQuery, Drupal, this, this.document);

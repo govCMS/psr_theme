@@ -46,7 +46,6 @@
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
-    <?php print_r($content); ?>
     <div class="image-title">
       <?php if (!empty($content['field_bean_image'])) : ?>
         <div class="image landing-hover-<?php print (empty($content['field_bean_imagehover'])?'no':'yes'); ?>" data-name="<?php print $content['field_bean_image']['#object']->delta; ?>"
