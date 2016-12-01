@@ -49,7 +49,7 @@
     <?php print_r($content); ?>
     <div class="image-title">
       <?php if (!empty($content['field_bean_image'])) : ?>
-        <div class="image landing-hover-<?php print (empty($content['field_bean_imagehover'])?'no':'yes'); ?>">
+        <div class="image landing-hover-<?php print (empty($content['field_bean_imagehover'])?'no':'yes'); ?>" data-name="<?php print $content['field_bean_image'][#object]['delta']; ?>">
         <?php if (!empty($content['field_link_to'])) : ?>
           <a href="<?php print render($content['field_link_to'][0]); ?>"><?php print render($content['field_bean_image']); ?></a>
           <?php if (!empty($content['field_bean_imagehover'])) : ?>
