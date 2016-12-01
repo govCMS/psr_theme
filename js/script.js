@@ -84,8 +84,8 @@ Drupal.behaviors.landingImageHover = {
 
 	$( '.image-title image' ).foreach(function(i) {
             var $that = $( this );
-            var $image_original[$that.data('name')] = $that.find( 'a img' ).attr( 'src' );
-            var $image_hover[$that.data('name')] = $( this ).find( '.landing-hover-image img' ).attr( 'src' );
+            $image_original[$that.data('name')] = $that.find( 'a img' ).attr( 'src' );
+            $image_hover[$that.data('name')] = $that.find( '.landing-hover-image img' ).attr( 'src' );
         });
 
         console.log($image_original);
