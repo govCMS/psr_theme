@@ -82,6 +82,9 @@ Drupal.behaviors.mobileNavigation = {
 Drupal.behaviors.landingImageHover = {
     attach: function(context, settings) {
 
+        var $image_original = [];
+        var $image_hover = [];
+
 	$( '.image-title image' ).each(function(i) {
             var $that = $( this );
             $image_original[$that.data('name')] = $that.find( 'a img' ).attr( 'src' );
