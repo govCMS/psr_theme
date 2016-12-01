@@ -45,7 +45,7 @@
  */
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
+  <?php print_r($content); ?>
   <div class="content"<?php print $content_attributes; ?>>
     <div class="image-title">
       <?php if (!empty($content['field_bean_image'])) : ?>
