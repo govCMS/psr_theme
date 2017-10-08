@@ -39,7 +39,6 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
     <![endif]-->
   <?php endif; ?>
-  <script type="text/javascript" src="//fast.fonts.net/jsapi/002b97b8-9dae-4f60-afd5-389ac597335e.js"></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
