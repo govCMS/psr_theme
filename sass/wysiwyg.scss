@@ -2,7 +2,7 @@
 @import 'init';
 
 // HTML element (SMACSS base) rules
-@import 'base/*';
+@import 'base/**';
 
 // Component (SMACSS module) rules
 @import 'components/button';

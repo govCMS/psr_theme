@@ -84,13 +84,13 @@
       var $image_original = [];
       var $image_hover = [];
 
-      $('.image-title image').each(function(i) {
+      $('.image-title .image').each(function(i) {
         var $that = $(this);
         $image_original[$that.data('name')] = $that.find('a img').attr('src');
         $image_hover[$that.data('name')] = $that.find('.landing-hover-image img').attr('src');
       });
 
-      $('.image-title image').hover(
+      $('.image-title .image').hover(
         function() {
           $(this).find('a img').attr('src', $image_hover[$(this).data('name')]);
         },
