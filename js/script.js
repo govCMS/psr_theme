@@ -98,8 +98,15 @@
           $(this).find('a img').attr('src', $image_original[$(this).data('name')]);
         }
       );
+      
+      $('.image-title .image a').focusin(function() {  
+          $(this).find('img').attr('src', $image_hover[$(this).parent().data('name')]);
+      });
+      $('.image-title .image a').focusout(function() {
+          $(this).find('img').attr('src', $image_original[$(this).parent().data('name')]);
+      });
 
     }
-  };
+  }
 
 })(jQuery, Drupal, this, this.document);
