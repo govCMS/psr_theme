@@ -19,7 +19,7 @@
 // These are the base styles applied to HTML elements.
 //
 // Styleguide: base
-@import 'base/*';
+@import 'base/**';
 
 // Layouts
 //
@@ -28,7 +28,7 @@
 // and are not documented.
 //
 // Styleguide: layouts
-@import 'layouts/*';
+@import 'layouts/**';
 
 // Components
 //
@@ -38,4 +38,4 @@
 // Weight: 1
 //
 // Styleguide: components
-@import 'components/*';
+@import 'components/**';

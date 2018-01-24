@@ -48,9 +48,14 @@
   <div class="content"<?php print $content_attributes; ?>>
     <div class="image-title">
       <?php if (!empty($content['field_bean_image'])) : ?>
-        <div class="image landing-hover-<?php print (empty($content['field_bean_imagehover'])?'no':'yes'); ?>" data-name="<?php print $content['field_bean_image']['#object']->delta; ?>"
+        <div class="image landing-hover-<?php print (empty($content['field_bean_imagehover'])?'no':'yes'); ?>" data-name="<?php print $content['field_bean_image']['#object']->delta; ?>">
         <?php if (!empty($content['field_link_to'])) : ?>
-          <a href="<?php print render($content['field_link_to'][0]); ?>"><?php print render($content['field_bean_image']); ?></a>
+          <a href="<?php print render($content['field_link_to'][0]); ?>">
+            <?php print render($content['field_bean_image']); ?>
+            <?php if (!empty($title)): ?>
+              <h2<?php print $title_attributes; ?>><?php print(preg_replace('/<\/?a[^>]*>/','',$title)); ?></h2>
+            <?php endif;?>
+          </a>
           <?php if (!empty($content['field_bean_imagehover'])) : ?>
               <div style="display:none;" class="landing-hover-image"><?php print render($content['field_bean_imagehover']); ?></div>
           <?php endif; ?>
@@ -60,9 +65,6 @@
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($title)): ?>
-        <h2<?php print $title_attributes; ?>><?php print $title ?></h2>
-      <?php endif;?>
     </div>
 
     <div class="summary-text">
