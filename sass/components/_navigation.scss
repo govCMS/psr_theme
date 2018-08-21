@@ -291,14 +291,14 @@
     border: none;
   }
   
-  &:first-child {width: 40px;} 
+  &:first-child {width: 60px;} 
   
   &:first-child a {
-    background: #444 url(../images/icons/home_icon.png) no-repeat 2px 50% !important;
-    background-size: 85% auto !important;
+    background: #444 url(../images/icons/home_icon.png) no-repeat 6px 50% !important;
+    background-size: 75% auto !important;
     padding: 10px 0 !important;
     text-indent: -9999em;
-    width: 40px; 
+    width: 60px; 
     height: 65px;
     
     &:hover,
@@ -347,20 +347,20 @@
 .navigation__primary-link,
 %navigation__primary-link {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
   color: color(white);
   background-color: transparent;
-    max-width: 180px;
+    max-width: 140px;
     min-height: 67px;
 }
 
 // About the Scheme (4)
 // Case outcomes (5)
 // About the Agency (7)
-.psr-main-menu>li:nth-child(4) > a, 
-.psr-main-menu>li:nth-child(5) > a,
-.psr-main-menu>li:nth-child(7) > a {max-width:120px !important;}
+//.psr-main-menu>li:nth-child(4) > a, 
+//.psr-main-menu>li:nth-child(5) > a,
+//.psr-main-menu>li:nth-child(7) > a {max-width:120px !important;}
 
 @media screen and (min-width: 720px) and (max-width: 979px) { 
   .navigation__primary-link,
