@@ -16,11 +16,11 @@
   padding: $half-gutter 0 0;
 
   @include bp-nq($medium) {
-    padding: 0 $gutter;
+    padding: 0 $half-gutter;
   }
 
   @include print-none();
-}
+}  
 
 .navigation,
 %navigation {
@@ -30,6 +30,13 @@
   background-color: #42414d;
   font-family: verdana, arial, sans-serif;
 }
+
+.psr-main-menu>li {
+  max-width:100%;
+  
+  @include bp-nq($medium) {}
+}
+
 .psr-main-menu>li:nth-child(1):hover{
   >a {
     &:before {
@@ -60,6 +67,23 @@
     color: black !important;
   }
   >a {
+    background-color: #003366 !important; 
+    color: #fff !important;
+
+    &:before {
+        border-top: 3px solid #003366 !important;
+    }
+  }
+  >ul>li:hover a:before {
+    border-left: 5px solid #003366 !important;
+  }
+}
+.psr-main-menu>li:nth-child(4):hover{
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
+  >a {
     background-color: #006a96 !important; 
     color: #fff !important;
 
@@ -71,7 +95,24 @@
     border-left: 5px solid #006a96 !important;
   }
 }
-.psr-main-menu>li:nth-child(4):hover{
+.psr-main-menu>li:nth-child(5):hover{
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
+  >a {
+    background-color: #000033 !important;
+    color: #fff !important;
+
+    &:before {
+        border-top: 3px solid #000033 !important; 
+    }
+  }
+  >ul>li:hover a:before {
+    border-left: 5px solid #000033 !important;
+  }
+}
+.psr-main-menu>li:nth-child(6):hover{
   ul li a{
     background-color:  white !important;
     color: black !important;
@@ -88,7 +129,7 @@
     border-left: 5px solid #4f7c92 !important;
   }
 }
-.psr-main-menu>li:nth-child(5):hover{
+.psr-main-menu>li:nth-child(7):hover{
   ul li a{
     background-color:  white !important;
     color: black !important;
@@ -105,6 +146,7 @@
     border-left: 5px solid #737581 !important;
   }
 }
+
 //NON ACTIVE TRAIL
 
 .psr-main-menu>li:nth-child(2){
@@ -117,19 +159,31 @@
    ul li a {
     background-color:  white !important;
     color: black !important;
-}
+  }
 }
 .psr-main-menu>li:nth-child(4){
    ul li a {
      background-color:  white !important;
      color: black !important;
-}
+  }
 }
 .psr-main-menu>li:nth-child(5){
    ul li a {
      background-color:  white !important;
      color: black !important;
+  }
 }
+.psr-main-menu>li:nth-child(6){
+   ul li a {
+     background-color:  white !important;
+     color: black !important;
+  }
+}
+.psr-main-menu>li:nth-child(7){
+   ul li a {
+     background-color:  white !important;
+     color: black !important;
+  }
 }
 
 //ACTIVE TRAIL
@@ -140,10 +194,6 @@
   ul li a{
     background-color:  white !important;
     color: black !important;
-  }
-  a{
-   background-color: #004e72 !important; 
-   color: #fff !important;
   }
   >ul>li.active-trail a:before {
     border-left: 5px solid #004e72 !important;
@@ -157,10 +207,6 @@
     background-color:  white !important;
     color: black !important;
   }
-    a{
-    background-color: #006a96 !important;
-    color: #fff !important;
-}
   >ul>li.active-trail a:before {
     border-left: 5px solid #006a96 !important;
   }
@@ -168,15 +214,10 @@
     border-top: 3px solid #006a96 !important;
   }
 }
-
 .psr-main-menu li.active-trail:nth-child(4){
   ul li a{
     background-color:  white !important;
     color: black !important;
-  }
-   a{
-    background-color: #4f7c92 !important; 
-    color: #fff !important;
   }
   >ul>li.active-trail a:before {
     border-left: 5px solid #4f7c92 !important;
@@ -197,6 +238,31 @@
     border-top: 3px solid #737581 !important;
   }
 }
+.psr-main-menu li.active-trail:nth-child(6){
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
+  >ul>li.active-trail a:before {
+    border-left: 5px solid #737581 !important;
+  }
+  >a:before {
+    border-top: 3px solid #737581 !important;
+  }
+}
+.psr-main-menu li.active-trail:nth-child(7){
+  ul li a{
+    background-color:  white !important;
+    color: black !important;
+  }
+  >ul>li.active-trail a:before {
+    border-left: 5px solid #737581 !important;
+  }
+  >a:before {
+    border-top: 3px solid #737581 !important;
+  }
+}
+
 .navigation__item,
 %navigation__item {
   @extend %unstyled-list;
@@ -204,7 +270,7 @@
   position: relative;
   border: 1px solid color(grey-extra-light);
   border-top: none;
-  white-space: nowrap;
+  //white-space: nowrap;
 
   &:first-child {
     border-top: 1px solid color(grey-extra-light);
@@ -224,6 +290,22 @@
   &:first-child {
     border: none;
   }
+  
+  &:first-child {width: 60px;} 
+  
+  &:first-child a {
+    background: #444 url(../images/icons/home_icon.png) no-repeat 6px 50% !important;
+    background-size: 75% auto !important;
+    padding: 10px 0 !important;
+    text-indent: -9999em;
+    width: 60px; 
+    height: 65px;
+    
+    &:hover,
+    &:focus {
+       border:1px solid #fff !important;
+    }
+  }
 
   &:focus > a,
   &:hover > a {
@@ -238,6 +320,8 @@
   text-decoration: none;
   color: color(black);
   background-color: color(white);
+  line-height: 1.1em;
+  width: 180px;
   
   &:focus,
   &:hover {
@@ -257,17 +341,46 @@
     left: -1px;
     width: 0;
     height: calc(100% + 2px);
-    //border-left: 5px solid color(red);
   }
 }
 
 .navigation__primary-link,
 %navigation__primary-link {
   display: block;
-  padding: 10px $gutter;
+  padding: 10px 15px;
   text-decoration: none;
   color: color(white);
   background-color: transparent;
+    max-width: 140px;
+    min-height: 67px;
+}
+
+// About the Scheme (4)
+// Case outcomes (5)
+// About the Agency (7)
+//.psr-main-menu>li:nth-child(4) > a, 
+//.psr-main-menu>li:nth-child(5) > a,
+//.psr-main-menu>li:nth-child(7) > a {max-width:120px !important;}
+
+@media screen and (min-width: 720px) and (max-width: 979px) { 
+  .navigation__primary-link,
+  %navigation__primary-link {
+    max-width: 110px;
+    min-height: 86px;
+  }
+  
+  .psr-main-menu>li:nth-child(4) > a, 
+  .psr-main-menu>li:nth-child(5) > a,
+  .psr-main-menu>li:nth-child(7) > a {max-width:100px !important;}
+}
+
+@media screen and (max-width: 719px) { 
+  .navigation__primary-link,
+  %navigation__primary-link,
+  .psr-main-menu>li>a {
+    max-width: 100% !important;
+    min-height: auto !important;
+  }
 }
 
 .navigation__primary-link.is-active,
@@ -380,5 +493,5 @@
   left: 100%!important;
   top:0!important;
   width: auto!important;
-  white-space: nowrap!important;
+  //white-space: nowrap!important;
 }
